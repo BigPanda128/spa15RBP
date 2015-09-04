@@ -14,27 +14,28 @@
   left   : 0;
   right  : 0;
   height : 40px;
+  background : black;
 }
 .spa-shell-head-logo {
   top        : 4px;
   left       : 4px;
   height     : 32px;
-  width      : 128px;
-  background : orange;
+  width      : 512px;
+  background : purple;
 }
 .spa-shell-head-acct {
   top        : 4px;
   right      : 0;
   width      : 64px;
   height     : 32px;
-  background : green;
+  background : blue;
 }
 .spa-shell-head-search {
   top        : 4px;
   right      : 64px;
   width      : 248px;
   height     : 32px;
-  background : blue;
+  background : pink;
 }
 
 .spa-shell-main {
@@ -49,17 +50,18 @@
   bottom : 0;
 }
 .spa-shell-main-nav {
-  width  : 250px;
-  background : #eee;
+  width  : 100px;
+  background : brown;
 }
   .spa-x-closed .spa-shell-main-nav {
     width  : 0;
+    background : red;
   }
 
 .spa-shell-main-content {
-  left  : 250px;
+  left  : 100px;
   right : 0;
-  background : #ddd;
+  background : black;
 }
   .spa-x-closed .spa-shell-main-content {
     left : 0;
@@ -70,13 +72,14 @@
   left   : 0;
   right  : 0;
   height : 40px;
+  background : black;
 }
 .spa-shell-chat {
   bottom     : 0;
   right      : 0;
   width      : 300px;
   height     : 15px;
-  background : red;
+  background : blue;
   z-index    : 1;
 }
 .spa-shell-modal {
@@ -86,7 +89,7 @@
   left          : 50%;
   width         : 400px;
   height        : 400px;
-  background    : #fff;
+  background    : gray;
   border-radius : 3px;
   z-index       : 2;
 }
