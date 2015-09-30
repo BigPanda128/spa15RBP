@@ -9,6 +9,8 @@
   regexp : true, sloppy  : true, vars     : false,
   white  : true
 */
+
+//some dumb line
 /*global TAFFY, $, spa */
 
 spa.model = (function () {
