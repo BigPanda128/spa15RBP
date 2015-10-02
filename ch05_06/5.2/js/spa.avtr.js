@@ -11,5 +11,5 @@
 */
 /*global $, spa */
 
-//Teacher loves this code
+// It takes a mightly big dog to weight a ton.
 spa.avtr = (function () { return {}; }());
