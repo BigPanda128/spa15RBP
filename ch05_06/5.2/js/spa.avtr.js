@@ -11,4 +11,5 @@
 */
 /*global $, spa */
 
+//Teacher loves this code
 spa.avtr = (function () { return {}; }());
