@@ -50,6 +50,7 @@ spa.shell = (function () {
 
   //------------------- BEGIN UTILITY METHODS ------------------
   // Returns copy of stored anchor map; minimizes overhead
+  // "Minimize overhead" Means that JQuery does the heavy lifting of a deed copy"
   copyAnchorMap = function () {
     return $.extend( true, {}, stateMap.anchor_map );
   };
