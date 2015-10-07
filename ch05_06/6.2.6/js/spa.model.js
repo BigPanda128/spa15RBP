@@ -153,6 +153,7 @@ spa.model = (function () {
     get_user = function () { return stateMap.user; };
 
     login = function ( name ) {
+      // connect to our data source, wither fake or server based
       var sio = isFakeData ? spa.fake.mockSio : spa.data.getSio();
 
       stateMap.user = makePerson({
@@ -161,8 +162,10 @@ spa.model = (function () {
         name    : name
       });
 
+      // listen for userupdate and when its called run complete login
       sio.on( 'userupdate', completeLogin );
 
+      // provide the bakend with te dets for the new user
       sio.emit( 'adduser', {
         cid     : stateMap.user.cid,
         css_map : stateMap.user.css_map,
