@@ -114,12 +114,13 @@ spa.fake = (function () {
     emit_mock_msg = function () {
       setTimeout( function () {
         var user = spa.model.people.get_user();
+        console.log("Initiating the first mock message with " + user.name);
         if ( callback_map.updatechat ) {
           callback_map.updatechat([{
             dest_id   : user.id,
             dest_name : user.name,
-            sender_id : 'id_04',
-            msg_text  : 'Hi there ' + user.name + '!  Wilma here.'
+            sender_id : 'id_03',
+            msg_text  : 'Hi there ' + user.name + '!  Pebbles here.'
           }]);
         }
         else { emit_mock_msg(); }

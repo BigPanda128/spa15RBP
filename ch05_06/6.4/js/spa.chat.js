@@ -37,7 +37,7 @@ spa.chat = (function () {
                   + '<input type="text"/>'
                   + '<input type="submit" style="display:none"/>'
                   + '<div class="spa-chat-msg-send">'
-                    + 'send'
+                    + 'Manda'
                   + '</div>'
                 + '</form>'
               + '</div>'
@@ -320,7 +320,7 @@ spa.chat = (function () {
       .addClass( 'spa-x-select' );
 
     writeAlert( 'Now chatting with ' + arg_map.new_chatee.name );
-    jqueryMap.$title.text( 'Chat with ' + arg_map.new_chatee.name );
+    jqueryMap.$title.text( 'Chat con ' + arg_map.new_chatee.name );
     return true;
   };
 
