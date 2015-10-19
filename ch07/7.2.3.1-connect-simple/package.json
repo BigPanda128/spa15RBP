@@ -2,6 +2,7 @@
   "version" : "0.0.3",
   "private" : true,
   "dependencies" : {
-    "connect"   : "2.x.x"
+    "connect"   : "2.x.x",
+    "connect-logger" : "0.0.x"
   }
 }

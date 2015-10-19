@@ -130,6 +130,7 @@ spa.fake = (function () {
     // Try once per second to use listchange callback.
     // Stop trying after first success.
     send_listchange = function () {
+      console.log('Running listchange waiting...');
       listchange_idto = setTimeout( function () {
         if ( callback_map.listchange ) {
           callback_map.listchange([ peopleList ]);
